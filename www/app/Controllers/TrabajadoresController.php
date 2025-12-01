@@ -11,6 +11,7 @@ class TrabajadoresController extends BaseController
 {
     public function getAllTrabajadores()
     {
-        $model = new ConsultasModel();
+        $model = new TrabajadoresModel();
+
     }
 }
