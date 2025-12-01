@@ -4,7 +4,7 @@ namespace Com\Daw2\Core;
 
 use Com\Daw2\Controllers\ErroresController;
 use Com\Daw2\Controllers\InicioController;
-use Com\Daw2\Controllers\ConsultasController;
+use Com\Daw2\Controllers\TrabajadoresController;
 use Steampixel\Route;
 
 class FrontController
@@ -33,25 +33,16 @@ class FrontController
         );
 
         /**
-         * Ejercicios Consultas
+         * Ejercicios Trabajadores - Tabla
          */
 
         Route::add(
-            '/consultas',
+            '/trabajadores',
             function () {
-                $controlador = new ConsultasController();
-                $controlador->index();
+                $controlador = new TrabajadoresController();
+                $controlador->getAllTrabajadores();
             },
             'get'
-        );
-
-        Route::add(
-            '/',
-            function () {
-                $controlador = new ConsultasController();
-                $controlador->index();
-            },
-            'post'
         );
 
         /**

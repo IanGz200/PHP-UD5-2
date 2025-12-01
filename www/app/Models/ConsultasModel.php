@@ -14,16 +14,4 @@ class ConsultasModel extends BaseDbModel
         $stmt = $this->pdo->prepare($sql);
         return $stmt->fetchAll();
     }
-
-    public function getAllBySalary()
-    {
-        $sql = "SELECT * FROM trabajadores order by salarioBruto desc";
-        $stmt = $this->pdo->prepare($sql);
-        return $stmt->fetchAll();
-    }
-
-    public function getStandard()
-    {
-        $sql = "SELECT * FROM trabajadores where ";
-    }
 }

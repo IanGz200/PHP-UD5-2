@@ -25,7 +25,13 @@
                   <i class="fas fa-laptop-code nav-icon"></i>
                   <p>Demo Proveedores</p>
                 </a>
-              </li>              
+              </li>
+                <li class="nav-item">
+                    <a href="<?php echo $_ENV['host.folder'] ?>trabajadores" class="nav-link <?php echo $_SERVER['REQUEST_URI'] === $_ENV['host.folder'] . 'trabajadores' ? 'active' : ''; ?>">
+                        <i class="fas fa-laptop-code nav-icon"></i>
+                        <p>Trabajadores</p>
+                    </a>
+                </li>
             </ul>
           </li>
         </ul>

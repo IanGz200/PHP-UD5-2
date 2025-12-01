@@ -7,11 +7,10 @@ namespace Com\Daw2\Controllers;
 use Com\Daw2\Core\BaseController;
 use Com\Daw2\Models\ConsultasModel;
 
-class ConsultasController extends BaseController
+class TrabajadoresController extends BaseController
 {
-    public function getAll()
+    public function getAllTrabajadores()
     {
         $model = new ConsultasModel();
-        $trabajadores = $model->getAll();
     }
 }
