@@ -40,7 +40,7 @@ class FrontController
             '/trabajadores',
             function () {
                 $controlador = new TrabajadoresController();
-                $controlador->getAllTrabajadores();
+                $controlador->getTrabajadores();
             },
             'get'
         );
